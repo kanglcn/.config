@@ -1,0 +1,36 @@
+# Ignore everything,
+/*
+
+# But
+!/.gitignore
+!/fish/
+!/omf/
+!/fontconfig/
+!/my_packages.txt
+!/shrc
+!/alacritty/
+!/i3/
+!/polybar/
+!/my_python_packages.txt
+!/nvim/
+/nvim/*
+!/nvim/init.vim
+!/nvim/coc-settings.json
+!/nvim/UltiSnips/
+!/zsh/
+!/rofi/
+!/update
+!/neofetch/
+!/my_packages_aur.txt
+# ranger
+!/ranger/
+/ranger/plugins/__pycache__/*
+/ranger/colorschemes/__pycache__/*
+/ranger/folders.conf
+/ranger/colorschemes/__init__.pyo
+/ranger/colorschemes/default.pyo
+/ranger/plugins/__init__.pyo
+/ranger/plugins/devicons.pyo
+/ranger/plugins/devicons_linemode.pyo
+!/update
+!/packages_install.sh

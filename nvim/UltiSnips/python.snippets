@@ -1,0 +1,75 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet templete "Python script templete" b
+#!/usr/bin/env python3
+#  -*- coding: utf-8  -*-
+
+# Kang Liang `date +%Y-%m-%d`
+
+import argparse
+
+DESCRIPTION = '''
+open source
+'''
+
+NOTE = '''
+NOTE: this note
+'''
+
+
+def `!p snip.rv = snip.basename`(name):
+		print(name)
+
+
+################################################################################
+
+
+def create_parser():
+		parser = argparse.ArgumentParser(
+				description=DESCRIPTION,
+				epilog=NOTE,
+				formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+		parser.add_argument('name', help='your name')
+		return parser
+
+
+def command_line_parse():
+		parser = create_parser()
+		inps = parser.parse_args()
+		return inps
+
+
+def main():
+		inps = command_line_parse()
+		`!p snip.rv = snip.basename`(inps.name)
+
+
+if __name__ == "__main__":
+		main()
+
+endsnippet

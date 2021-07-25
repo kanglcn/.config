@@ -1,0 +1,7 @@
+{
+  "templete": {
+    "prefix": "templete",
+    "body": "#!/usr/bin/env python3\n#  -*- coding: utf-8  -*-\n\n# Kang Liang `date +%Y-%m-%d`\n\nimport argparse\n\nDESCRIPTION = '''\nopen source\n'''\n\nNOTE = '''\nNOTE: this note\n'''\n\n\ndef `!p snip.rv = snip.basename`(name):\n\t\tprint(name)\n\n\n################################################################################\n\n\ndef create_parser():\n\t\tparser = argparse.ArgumentParser(\n\t\t\t\tdescription=DESCRIPTION,\n\t\t\t\tepilog=NOTE,\n\t\t\t\tformatter_class=argparse.ArgumentDefaultsHelpFormatter)\n\n\t\tparser.add_argument('name', help='your name')\n\t\treturn parser\n\n\ndef command_line_parse():\n\t\tparser = create_parser()\n\t\tinps = parser.parse_args()\n\t\treturn inps\n\n\ndef main():\n\t\tinps = command_line_parse()\n\t\t`!p snip.rv = snip.basename`(inps.name)\n\n\nif __name__ == \"__main__\":\n\t\tmain()\n",
+    "description": "Python script templete"
+  }
+}

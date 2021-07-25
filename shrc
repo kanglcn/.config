@@ -1,0 +1,39 @@
+#####################################################
+# .myshrc
+# Used for environment variable configuration.
+# Kang Liang 2020/11/26
+#####################################################
+
+# trelis
+alias settrelis='nohup /opt/Trelis-16.5/bin/rlm &'
+
+## better command
+alias rm='rmtrash'
+alias rmdir='rmdirtrash'
+alias sudo='sudo '
+
+alias cat='ccat'
+
+alias ls='exa'
+
+alias find='fd'
+
+alias grep='rg'
+
+# set vim as default editor
+export VISUAL=nvim;
+export EDITOR=nvim;
+
+eval $(thefuck --alias)
+# fzf
+export FZF_DEFAULT_COMMAND='fd';
+export FZF_COMPLETION_TRIGGER='\';
+export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500';
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
+
+# alias
+alias v="nvim"
+#alias vi="nvim"
+alias vim="nvim"
+#export QT_QPA_PLATFORMTHEME=qt5ct;
