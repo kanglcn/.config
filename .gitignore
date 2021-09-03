@@ -22,6 +22,7 @@
 !/update
 !/neofetch/
 !/my_packages_aur.txt
+!/.gitmodules
 # ranger
 !/ranger/
 /ranger/__pycache__/*
