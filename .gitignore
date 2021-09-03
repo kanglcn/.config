@@ -24,6 +24,7 @@
 !/my_packages_aur.txt
 # ranger
 !/ranger/
+/ranger/__pycache__/*
 /ranger/plugins/__pycache__/*
 /ranger/colorschemes/__pycache__/*
 /ranger/folders.conf
