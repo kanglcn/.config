@@ -82,3 +82,4 @@ python-gdal
 python-progressbar
 python-sqlalchemy-utils
 python-geoalchemy2
+qgis
