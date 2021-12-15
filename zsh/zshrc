@@ -59,6 +59,7 @@ alias clc='clear'
 
 #alias P='~/bin/sshPacific.sh'
 alias R='~/bin/sshRadarvm.sh'
+alias H='~/bin/sshSMUHPC.sh'
 # set vim as default editor
 export VISUAL=nvim;
 export EDITOR=nvim;
