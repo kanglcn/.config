@@ -280,6 +280,7 @@ Plug 'cohama/agit.vim'
 " Python
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'tweekmonster/braceless.vim'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 "" Error checking
 "Plug 'w0rp/ale'
 "
@@ -580,3 +581,6 @@ nmap <Leader>m <Plug>ToggleMarkbar
 
 " vim-hexokinase
 let g:Hexokinase_highlighters = ['backgroundfull']
+
+" vim-pydocstring
+let g:pydocstring_formatter = 'numpy'
