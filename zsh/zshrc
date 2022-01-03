@@ -43,9 +43,9 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 ## better command
-alias rm='rmtrash'
-alias rmdir='rmdirtrash'
-alias sudo='sudo '
+#alias rm='rmtrash'
+#alias rmdir='rmdirtrash'
+#alias sudo='sudo '
 
 # alias cat='ccat'
 
