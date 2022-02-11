@@ -192,21 +192,21 @@ nnoremap S :w<CR>:source $MYVIMRC<CR>
 call plug#begin('~/.config/nvim/plugged')
 
 " Pretty Dress
-Plug 'ajmwagar/vim-deus'
-Plug 'arzg/vim-colors-xcode'
-Plug 'tomasr/molokai'
-Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'morhetz/gruvbox'
-  let g:gruvbox_contrast_dark = 'soft'
-Plug 'yuttie/hydrangea-vim'
-Plug 'tyrannicaltoucan/vim-deep-space'
-Plug 'AlessandroYorba/Despacio'
-Plug 'cocopon/iceberg.vim'
-Plug 'w0ng/vim-hybrid'
-Plug 'nightsense/snow'
-Plug 'nightsense/stellarized'
-Plug 'nightsense/cosmic_latte'
-Plug 'lifepillar/vim-solarized8'
+"Plug 'ajmwagar/vim-deus'
+"Plug 'arzg/vim-colors-xcode'
+"Plug 'tomasr/molokai'
+"Plug 'chriskempson/vim-tomorrow-theme'
+"Plug 'morhetz/gruvbox'
+"  let g:gruvbox_contrast_dark = 'soft'
+"Plug 'yuttie/hydrangea-vim'
+"Plug 'tyrannicaltoucan/vim-deep-space'
+"Plug 'AlessandroYorba/Despacio'
+"Plug 'cocopon/iceberg.vim'
+"Plug 'w0ng/vim-hybrid'
+"Plug 'nightsense/snow'
+"Plug 'nightsense/stellarized'
+"Plug 'nightsense/cosmic_latte'
+"Plug 'lifepillar/vim-solarized8'
 
 " Status line
 Plug 'liuchengxu/eleline.vim'
@@ -470,8 +470,8 @@ highlight link RnvimrNormal CursorLine
 nnoremap <silent> <LEADER>r :RnvimrToggle<CR><C-\><C-n>:RnvimrResize 0<CR>
 let g:rnvimr_action = {
       \ '<C-t>': 'NvimEdit tabedit',
-      \ '<C-x>': 'NvimEdit split',
-      \ '<C-v>': 'NvimEdit vsplit',
+      \ '<C-j>': 'NvimEdit split',
+      \ '<C-l>': 'NvimEdit vsplit',
       \ 'gw': 'JumpNvimCwd',
       \ 'yw': 'EmitRangerCwd'
       \ }
