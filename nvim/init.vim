@@ -214,10 +214,10 @@ Plug 'liuchengxu/eleline.vim'
 " Visual enhancement
 Plug 'luochen1990/rainbow'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'ryanoasis/vim-devicons'
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'mg979/vim-xtabline'
-Plug 'RRethy/vim-illuminate'
+" Plug 'ryanoasis/vim-devicons'
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' } " show color in vim for rgb text
+Plug 'mg979/vim-xtabline' "show tablines
+Plug 'RRethy/vim-illuminate' "Vim plugin for automatically highlighting other uses of the current word under the cursor
 
 " debugger
 Plug 'puremourning/vimspector'
@@ -471,7 +471,9 @@ nnoremap <silent> <LEADER>r :RnvimrToggle<CR><C-\><C-n>:RnvimrResize 0<CR>
 let g:rnvimr_action = {
       \ '<C-t>': 'NvimEdit tabedit',
       \ '<C-j>': 'NvimEdit split',
+      \ '<C-k>': 'NvimEdit leftabove split',
       \ '<C-l>': 'NvimEdit vsplit',
+      \ '<C-h>': 'NvimEdit leftabove vsplit',
       \ 'gw': 'JumpNvimCwd',
       \ 'yw': 'EmitRangerCwd'
       \ }
